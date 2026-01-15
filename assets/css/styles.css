@@ -1,0 +1,170 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@1,100..900&family=Instrument+Sans&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --hue: 13;
+  --first-color: hsl(var(--hue), 90%, 45%);
+  --title-color: hsl(var(--hue), 4%, 12%);
+  --text-color: hsl(var(--hue), 4%, 27%);
+  --text-color-light: hsl(var(--hue), 4%, 65%);
+  --body-color: hsl(var(--hue), 4%, 100%);
+  --container-color: hsl(var(--hue), 4%, 96%);
+  --border-color: hsl(var(--hue), 4%, 62%);
+  --white-color: hsl(var(--hue), 4%, 100%);
+  --gray-color: hsl(var(--hue), 4%, 85%);
+
+  /*========== Font family ==========*/
+  --body-font: "Azeret Mono", monospace;
+  --second-font: "Instrument Sans", sans-serif;
+
+  /*========== Font sizes ==========*/
+  --big-font-size: 4rem;
+  --h1-font-size: 3rem;
+  --h2-font-size: 2.5rem;
+  --h3-font-size: 1.75rem;
+  --h4-font-size: 1.5rem;
+  --largest-font-size: 1.375rem;
+  --larger-font-size: 1.25rem;
+  --large-font-size: 1.125rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+
+  /*========== Font weight ==========*/
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+}
+/* Responsive typography */
+
+/*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+input,
+textarea,
+button {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+}
+
+body {
+  background-color: var(--body-color);
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-weight: var(--weight-700);
+  line-height: 1.2;
+}
+p {
+  line-height: 1.75;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--title-color);
+}
+
+button,
+input,
+textarea {
+    background-color: transparent;
+    border: none;
+    outline: none ;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+/*=============== SECTION TITLE ===============*/
+
+/*=============== BUTTON ===============*/
+
+/*=============== LAYOUT ===============*/
+
+/*=============== HEADER ===============*/
+
+/*========== Topbar ==========*/
+
+/*========== Bottom bar ==========*/
+
+/*========== Navbar ==========*/
+
+/*=============== HOME ===============*/
+
+/* Swiper */
+
+/*=============== PRODUCTS ===============*/
+
+/*=============== CATEGORIES ===============*/
+
+/*=============== FEATURES ===============*/
+
+/*=============== PRODUCTS ===============*/
+
+/*=============== CATEGORY ===============*/
+
+/*=============== NEWSLETTER ===============*/
+
+/*=============== FOOTER ===============*/
+
+/*=============== SCROLL UP ===============*/
+
+/*=============== BANNER ===============*/
+
+/*=============== SHOP ===============*/
+
+/*========== Top ==========*/
+
+/*========== Filters ==========*/
+
+/*========== Products ==========*/
+
+/*========== Pagination ==========*/
+
+/*=============== DETAILS ===============*/
+
+/*=============== DETAILS CONTENT ===============*/
+
+/*=============== ACCOUNT ===============*/
+
+/*=============== CART ===============*/
+
+/*=============== CART BOTTOM ===============*/
+
+/*=============== WISHLIST ===============*/
+
+/*=============== CHECKOUT ===============*/
+
+/*=============== RETURNS ===============*/
+
+/*=============== STEPS ===============*/
+
+/*=============== ACCORDION ===============*/
+
+/*=============== CONTACT ===============*/
+
+/*=============== ACCORDION ===============*/
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+
+/* For medium devices */
+
+/* For small devices */
