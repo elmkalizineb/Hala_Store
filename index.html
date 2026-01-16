@@ -13,6 +13,7 @@
     <!--=============== SWIPER CSS ===============-->
 
     <!--=============== NICE SELECT CSS ===============-->
+    <link rel="stylesheet" href="assets/css/nice-select2.css">
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -22,7 +23,7 @@
   <body>
     <!--=============== HEADER ===============-->
     <header class="header">
-       <!--======= Topbar ========-->
+      <!--======= Topbar ========-->
       <div class="topbar">
         <div class="topbar-container container">
           <ul class="topbar-list">
@@ -55,13 +56,45 @@
           </div>
 
           <div class="topbar-shipping">
-           <img src="assets/img/truck.svg" alt="" class="topbar-icon" >
-           <p class="topbar-text">Free Shipping for all Orders of 150DA</p>
-            
+            <img src="assets/img/truck.svg" alt="" class="topbar-icon" />
+            <p class="topbar-text">Free Shipping for all Orders of 150DA</p>
           </div>
         </div>
       </div>
+      <!--======= Bottom bar  ========-->
+      <div class="bottom-bar container">
+        <a href="index.html">
+          <img src="assets/img/logo.jpg" alt="" />
+        </a>
 
+        <form action="" class="navbar-form">
+          <select name="" id="navbar-select" style="display: none;" class="navbar-select">
+            <option value="all" selected>All Categories</option>
+            <option value="fas">Fashion</option>
+            <option value="ele">Electronics</option>
+            <option value="jew">Jewelry</option>
+            <option value="gro">Grocery</option>
+          </select>
+
+          <input type="text" placeholder="Search..." class="navbar-input" />
+
+          <button type="submit" class="navbar-search">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+
+        <div class="navbar-btns">
+          <a href="account.html" class="navbar-btn"
+            ><i class="ri-user-line"></i
+          ></a>
+          <a href="#" class="navbar-btn">
+            <i class="ri-heart-line"></i>
+          </a>
+          <a href="#" class="navbar-btn"
+            ><i class="ri-shopping-cart-line"></i
+          ></a>
+        </div>
+      </div>
     </header>
 
     <!--=============== MAIN ===============-->
@@ -87,6 +120,7 @@
     <!--=============== SWIPER JS ===============-->
 
     <!--=============== NICE SELECT JS ===============-->
+     <script src="assets/js/nice-select2.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
