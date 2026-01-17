@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,9 +11,13 @@
     />
 
     <!--=============== SWIPER CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
 
     <!--=============== NICE SELECT CSS ===============-->
-    <link rel="stylesheet" href="assets/css/nice-select2.css">
+    <link rel="stylesheet" href="assets/css/nice-select2.css" />
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -68,7 +72,12 @@
         </a>
 
         <form action="" class="navbar-form">
-          <select name="" id="navbar-select" style="display: none;" class="navbar-select">
+          <select
+            name=""
+            id="navbar-select"
+            style="display: none"
+            class="navbar-select"
+          >
             <option value="all" selected>All Categories</option>
             <option value="fas">Fashion</option>
             <option value="ele">Electronics</option>
@@ -113,41 +122,88 @@
           <li class="navbar-item">
             <a href="contact.html" class="navbar-link"> CONTACT </a>
           </li>
-
         </ul>
         <div class="navbar-contact">
-          <img src="assets/img/call.svg" alt="" class="navbar-icon">
+          <img src="assets/img/call.svg" alt="" class="navbar-icon" />
           <a href="tel:097103626" class="navbar-call-link">097103626</a>
         </div>
       </nav>
     </header>
 
     <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== HOME ===============-->
+      <section class="home">
+        <div class="swiper home-swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1  -->
+            <div
+              class="swiper-slide"
+              style="background: url(./assets/img/home-img-1.jpg)"
+            >
+              <div class="container">
+                <div class="home-tag">
+                  <img src="assets/img/bolt.svg" alt="" class="home-img" /> Top
+                  Trending
+                </div>
+                <h1 class="home-title">Classic Elegant Style Women</h1>
+                <p class="home-description">
+                  Discover timeless elegance and modern sophistication with our
+                  curated collection of women's Hidjab.
+                </p>
+                <a href="shop.html" class="btn">Shop Now</a>
+              </div>
+            </div>
+            <!-- Slide 2  -->
+            <div
+              class="swiper-slide"
+              style="background: url(./assets/img/home-img-2.jpg); "
+            >
+              <div class="container">
+                <div class="home-tag">
+                  <img src="assets/img/bolt.svg" alt="" class="home-img" /> Top
+                  Trending
+                </div>
+                <h1 class="home-title" style="color: var(--white-color);">Classic Elegant Style Women</h1>
+                <p class="home-description" style="color: var(--gray-color);" >
+                  Discover timeless elegance and modern sophistication with our
+                  curated collection of women's Hidjab.
+                </p>
+                <a href="shop.html" class="btn">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
-    <!--=============== HOME ===============-->
+      <!--============ PRODUCTS ===============-->
 
-    <!--============ PRODUCTS ===============-->
+      <!--=============== CATEGORIES ===============-->
 
-    <!--=============== CATEGORIES ===============-->
+      <!--=============== FEATURES ===============-->
 
-    <!--=============== FEATURES ===============-->
+      <!--=============== PRODUCTS ===============-->
 
-    <!--=============== PRODUCTS ===============-->
+      <!--=============== CATEGORY ===============-->
 
-    <!--=============== CATEGORY ===============-->
-
-    <!--=============== NEWSLETTER ===============-->
+      <!--=============== NEWSLETTER ===============-->
+    </main>
 
     <!--=============== FOOTER ===============-->
 
     <!--=============== SCROLL UP ===============-->
 
     <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <!--=============== NICE SELECT JS ===============-->
-     <script src="assets/js/nice-select2.js"></script>
+    <script src="assets/js/nice-select2.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+    <!--=============== HOMEJS ===============-->
+    <script src="assets/js/home.js"></script>
   </body>
 </html>

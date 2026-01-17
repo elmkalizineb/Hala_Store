@@ -95,6 +95,14 @@ img {
 /*=============== SECTION TITLE ===============*/
 
 /*=============== BUTTON ===============*/
+.btn{
+  display: inline-flex;
+  background-color: var(--first-color);
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  color: var(--white-color);
+  font-weight: var(--weight-700);
+}
 
 /*=============== LAYOUT ===============*/
 .container {
@@ -276,9 +284,48 @@ img {
 }
 
 /*=============== HOME ===============*/
+.home-swiper .swiper-slide{
+  padding-block: 10.5rem;
+  background-size: cover;
+}
+
+.home-tag{
+  background-color: var(--white-color);
+  color: var(--first-color);
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  padding: .25rem 1.125rem;
+  border-radius: 2rem;
+  font-weight: var(--weight-700);
+}
+
+.home-title{
+  font-size: var(--big-font-size);
+  max-width: 800px;
+  margin-block: 1rem 2.05rem;
+}
+
+.home-description{
+  max-width: 450px;
+  margin-bottom: 2rem;
+}
 
 /* Swiper */
-
+.swiper-pagination.swiper-pagination-horizontal{
+  bottom: 2rem;
+}
+.swiper-pagination-bullet{
+  width: 20px;
+  height: 4px;
+  background-color: var(--gray-color);
+  opacity: 1;
+  border-radius: 0;
+}
+.swiper-pagination-bullet-active{
+  width: 80px;
+}
+ 
 /*=============== PRODUCTS ===============*/
 
 /*=============== CATEGORIES ===============*/
