@@ -7,5 +7,9 @@ var homeSwiper = new Swiper(".home-swiper", {
 });
 
 /*=============== PRODUCT SWIPER ===============*/
-
+var homeSwiper = new Swiper(".product-swiper", {
+    loop: true,
+    slidesPerView:3,
+   spaceBetween:30,
+});
 /*=============== ELEVATE SWIPER ===============*/
