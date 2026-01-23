@@ -640,15 +640,15 @@ img {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.product-elevate-container .product-card{
+.product-elevate-container .product-card {
   background-color: var(--white-color);
   border: 1px solid var(--border-color);
 }
-.product-top{
+.product-top {
   position: relative;
 }
-.product-style{
-  background-color: hsl(var(--hue), 0%, 100%,0.9);
+.product-style {
+  background-color: hsl(var(--hue), 0%, 100%, 0.9);
   position: absolute;
   inset: 0;
   display: flex;
@@ -656,21 +656,21 @@ img {
   padding: 1rem;
   z-index: 10;
   opacity: 0;
-  transition: opacity 0.3s ease ;
+  transition: opacity 0.3s ease;
 }
-.product-card:hover .product-style{
+.product-card:hover .product-style {
   opacity: 1;
 }
-.product-color-title{
+.product-color-title {
   font-size: var(--normal-font-size);
   font-weight: var(--weight-600);
   margin-bottom: 1rem;
 }
-.product-color-img{
+.product-color-img {
   border-radius: 50%;
 }
-.product-sold-last{
-  background-color: hsl(var(--hue),100% ,97%);
+.product-sold-last {
+  background-color: hsl(var(--hue), 100%, 97%);
   padding-block: 0.5rem;
   border-radius: 2rem;
   color: var(--title-color);
@@ -682,15 +682,26 @@ img {
   column-gap: 0.5rem;
   margin-top: 1rem;
 }
-.product-sold-last i{
+.product-sold-last i {
   color: var(--first-color);
   font-size: var(--large-font-size);
 }
 
-.product-elevate .product-tag{
-  all: inset;
+.product-elevate .product-tag {
+  all: unset;
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  background-color: var(--title-color);
+  color: var(--white-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 2rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--weight-700);
 }
-
+.product-elevate .product-bottom{
+  padding: 1rem;
+}
 /*=============== CATEGORY ===============*/
 
 /*=============== NEWSLETTER ===============*/
