@@ -19,3 +19,4 @@ var homeSwiper = new Swiper(".product-elevate-swiper", {
         el: ".swiper-pagination",
     },
 });
+
