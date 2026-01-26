@@ -699,59 +699,100 @@ img {
   font-size: var(--small-font-size);
   font-weight: var(--weight-700);
 }
-.product-elevate .product-bottom{
+.product-elevate .product-bottom {
   padding: 1rem;
 }
 /*=============== CATEGORY ===============*/
-.category{
+.category {
   grid-template-columns: 4fr 8fr;
   align-items: center;
-  border:2px solid red;
+  /* border:2px solid red; */
 }
-.category-tabs{
-  width: 40%;
+.category-tabs {
+  width: 30%;
   /* border: 2px solid gold; */
 }
-.category-img{
-  width: 40%;
-}
-.category-tab-btn:first-child{
+
+.category-tab-btn:first-child {
   padding-top: 0;
 }
 .category-tab-btn::before,
-.category-tab-btn::after{
-  content: '';
+.category-tab-btn::after {
+  content: "";
   position: absolute;
   bottom: 0;
   height: 1px;
   background-color: var(--border-color);
 }
-.category-tab-btn::before{
+.category-tab-btn::before {
   width: 100%;
   opacity: 0.4;
 }
-.category-tab-btn::after{
+.category-tab-btn::after {
   width: 16%;
   left: 0;
 }
-.category-tab-active{
+.category-tab-active {
   color: var(--first-color);
 }
-.category-tab-active::after{
+.category-tab-active::after {
   background-color: var(--first-color);
 }
-.category-content{
-  grid-auto-columns: repeat(2,1fr);
-  border: 2px solid green;
-}
-.category-tab-btn{
+.category-tab-btn {
   color: var(--title-color);
   font-weight: var(--weight-500);
   padding-block: 1.125rem;
   position: relative;
   cursor: pointer;
 }
+.category-content {
+  grid-template-columns: repeat(2, 1fr);
+  /* border: 2px solid green; */
+}
+.category-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  position: relative;
+}
 
+.category-img {
+  border-right: 1px solid var(--border-color);
+  width: 50%;
+}
+
+.category-data {
+  padding-left: 2rem;
+}
+
+.category-title {
+  width: 90%;
+  font-size: var(--large-font-size);
+  font-weight: var(--weight-500);
+  line-height: 1.5;
+  margin-block: 0.75rem 1.5rem;
+}
+.category-title:hover a,
+.category-price {
+  color: var(--first-color);
+}
+
+.category-btn{
+  position: absolute;
+  right: 1rem;
+  bottom: 1.5rem;
+  background-color: var(--gray-color);
+  aspect-ratio: 1/1;
+  width: 36px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: all 0.3s ease;
+}
+.category-btn:hover{
+  background-color: var(--first-color);
+  color: var(--white-color);
+}
 
 
 /*=============== NEWSLETTER ===============*/
