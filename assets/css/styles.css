@@ -858,6 +858,70 @@ width: 80%;
 }
 
 /*=============== FOOTER ===============*/
+.footer{
+  background-color: var(--title-color);
+}
+
+.footer-container{
+  grid-template-columns: repeat(2,3fr) repeat(3,2fr);
+}
+.footer-logo{
+  margin-bottom: 1.5rem;
+}
+.footer-socials{
+  display: flex;
+  column-gap: 1.25rem;
+}
+.footer-social-link{
+  width: 38px;
+  aspect-ratio: 1/1;
+  background-color: var(--text-color);
+  color: var(--white-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.footer-title{
+  color: var(--white-color);
+  font-size: var(--larger-font-size);
+  margin-bottom: 2rem;
+}
+
+.footer-contact{
+  row-gap: 2rem;
+}
+.footer-item{
+  display: flex;
+  align-items: center;
+  column-gap: 1.25rem;
+}
+.footer-links{
+  display: grid;
+  row-gap: 1.25rem;
+}
+.footer-link,
+.footer-address{
+  color: var(--white-color);
+}
+
+.footer-link{
+  transition: color 0.3s ease;
+}
+.footer-link:hover{
+  color: var(--first-color);
+}
+
+.footer-group{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+.footer-copy{
+  color: var(--white-color);
+  font-size: var(--small-font-size);
+  
+}
 
 /*=============== SCROLL UP ===============*/
 
