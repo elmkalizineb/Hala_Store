@@ -8,9 +8,16 @@
 
 /*==================== NAVBAR SELECT ====================*/
 NiceSelect.bind(document.getElementById("navbar-select"), {
-    searchable: false, 
+    searchable: false,
 });
 
 /*==================== SHOW SCROLL UP ====================*/
+const scrollUp = () => {
+    const scrollUp = document.getElementById('scrollup');
 
-   
+    this.scrollY >= 350 
+    ? scrollUp.classList.add('show-scroll') 
+    : scrollUp.classList.remove('show-scroll');
+};
+
+window.addEventListener('scroll',scrollUp);
