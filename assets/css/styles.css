@@ -44,7 +44,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 body,
@@ -840,8 +840,8 @@ img {
   column-gap: 0.5rem;
 }
 
-.image{
-width: 80%;
+.image {
+  width: 80%;
 }
 
 .newslettre-images .flex {
@@ -850,32 +850,32 @@ width: 80%;
   justify-content: space-between;
   row-gap: 0.5rem;
 }
-.newsletter-box{
+.newsletter-box {
   overflow: hidden;
 }
-.newsletter-img{
+.newsletter-img {
   transition: transform 0.3s ease;
 }
-.newsletter-img:hover{
+.newsletter-img:hover {
   transform: scale(1.1) rotate(3deg);
 }
 
 /*=============== FOOTER ===============*/
-.footer{
+.footer {
   background-color: var(--title-color);
 }
 
-.footer-container{
-  grid-template-columns: repeat(2,3fr) repeat(3,2fr);
+.footer-container {
+  grid-template-columns: repeat(2, 3fr) repeat(3, 2fr);
 }
-.footer-logo{
+.footer-logo {
   margin-bottom: 1.5rem;
 }
-.footer-socials{
+.footer-socials {
   display: flex;
   column-gap: 1.25rem;
 }
-.footer-social-link{
+.footer-social-link {
   width: 38px;
   aspect-ratio: 1/1;
   background-color: var(--text-color);
@@ -884,50 +884,49 @@ width: 80%;
   display: grid;
   place-items: center;
 }
-.footer-title{
+.footer-title {
   color: var(--white-color);
   font-size: var(--larger-font-size);
   margin-bottom: 2rem;
 }
 
-.footer-contact{
+.footer-contact {
   row-gap: 2rem;
 }
-.footer-item{
+.footer-item {
   display: flex;
   align-items: center;
   column-gap: 1.25rem;
 }
-.footer-links{
+.footer-links {
   display: grid;
   row-gap: 1.25rem;
 }
 .footer-link,
-.footer-address{
+.footer-address {
   color: var(--white-color);
 }
 
-.footer-link{
+.footer-link {
   transition: color 0.3s ease;
 }
-.footer-link:hover{
+.footer-link:hover {
   color: var(--first-color);
 }
 
-.footer-group{
+.footer-group {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 2rem;
 }
-.footer-copy{
+.footer-copy {
   color: var(--white-color);
   font-size: var(--small-font-size);
-  
 }
 
 /*=============== SCROLL UP ===============*/
-.scrollup{
+.scrollup {
   position: fixed;
   right: 1.75rem;
   bottom: 1.75rem;
@@ -941,16 +940,53 @@ width: 80%;
   transition: all 0.4s ease;
 }
 
-.scrollup-icon{
+.scrollup-icon {
   font-size: 1.5rem;
   color: var(--title-color);
 }
 /* Show scroll up  */
-.show-scroll{
+.show-scroll {
   bottom: 1.75rem;
 }
 /*=============== BANNER ===============*/
+.banner {
+  background-image: url("../img/banner.jpg");
+  padding-block: 8rem 2.25rem;
+  text-align: center;
+}
+.banner-title {
+  font-size: var(--big-font-size);
+}
 
+.banner-description {
+  letter-spacing: 2px;
+  margin-block: 0.625rem 2.5rem;
+}
+
+.banner-description,
+.breadcrump-item {
+  color: var(--title-color);
+  text-transform: uppercase;
+}
+
+.breadcrumb{
+  background-color: var(--white-color);
+  width: fit-content;
+  margin-inline: auto;
+  border-radius: 2rem;
+  padding: 0.5rem 6.75rem;
+  display: flex;
+
+}
+
+.breadcrumb-item:not(:first-child)::before{
+  content: '/';
+  padding-right: 0.5rem;
+  color: var(--text-color);
+}
+.breadcrump-item:not(:first-child){
+  padding-left: 0.5rem;
+}
 /*=============== SHOP ===============*/
 
 /*========== Top ==========*/
