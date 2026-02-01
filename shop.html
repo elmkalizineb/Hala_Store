@@ -133,7 +133,6 @@
           <p class="banner-description">Everything You Need to Know</p>
 
           <ul class="breadcrumb">
-            
             <li class="breadcrumb-item">
               <a href="index.html">Home</a>
             </li>
@@ -144,6 +143,167 @@
       </section>
 
       <!--=============== SHOP ===============-->
+      <section class="shop container section">
+        <div class="top-filter-bar">
+          <div class="top-filter-left">
+            <div class="filter-btn" id="filter-btn">
+              <i class="ri-filter-fill"></i> Filter
+            </div>
+            <span class="filter-results">34 results</span>
+          </div>
+
+          <div class="top-filter-right">
+            <span class="filter-subtitle">Sort by : </span>
+
+            <div>
+              <select
+                class="shop-select"
+                style="display: none"
+                id="shop-select"
+              >
+                <option value="all" selected>All Categories</option>
+                <option value="fas">Fashion</option>
+                <option value="ele">Electronics</option>
+                <option value="jew">Jewelry</option>
+                <option value="gro">Grocery</option>
+              </select>
+            </div>
+
+            <span class="filter-subtitle">View as : </span>
+            <div class="view-btns">
+              <div class="view-btn active-view-btn">
+                <img src="assets/img/grid.svg" alt="" class="view-icon" />
+              </div>
+
+              <div class="view-btn">
+                <img src="assets/img/list.svg" alt="" class="view-icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-filters container grid" id="shop-filters">
+          <div class="filter-item">
+            <h3 class="filter-title">Availability</h3>
+
+            <div class="filter-data">
+              <input type="checkbox" class="filter-checkbox" id="in-stock" />
+              <label for="in-stock" class="filter-text"> In Stock</label>
+              <span>14</span>
+            </div>
+
+            <div class="filter-data">
+              <input type="checkbox" class="filter-checkbox" id="out-stock" />
+              <label for="in-stock" class="filter-text"> Out of Stock</label>
+              <span>06</span>
+            </div>
+          </div>
+
+          <div class="filter-item">
+            <h3 class="filter-title">Price</h3>
+
+            <div class="filter-data">
+              <p>Highest price is 7000DA</p>
+              <input type="range" class="filter-range" />
+            </div>
+          </div>
+
+          <div class="filter-item">
+            <h3 class="filter-title">Color</h3>
+
+            <div class="filter-data">
+              <div
+                class="filter-color"
+                style="--first-color: hsl(0, 0%, 0%);"
+              ></div>
+              <span class="filter-class"> Black</span>
+              <span>14</span>
+            </div>
+            <div class="filter-data">
+              <div
+                class="filter-color"
+                style="--first-color: hsl(34, 96%, 67%);"
+              ></div>
+              <span class="filter-class"> Brown</span>
+              <span>10</span>
+            </div>
+            <div class="filter-data">
+              <div
+                class="filter-color"
+                style="--first-color: hsl(49, 97%, 87%);"
+              ></div>
+              <span class="filter-class"> Light Beige</span>
+              <span>10</span>
+            </div>
+            <div class="filter-data">
+              <div
+                class="filter-color"
+                style="--first-color: hsl(0, 0%, 88%);"
+              ></div>
+              <span class="filter-class"> Gray</span>
+              <span>10</span>
+            </div>
+            <div class="filter-data">
+              <div
+                class="filter-color"
+                style="--first-color: hsl(35, 57%, 42%);"
+              ></div>
+              <span class="filter-class"> Chocolate</span>
+              <span>10</span>
+            </div>
+            <div class="filter-data">
+              <div
+                class="filter-color"
+                style="--first-color: hsl(0, 100%, 68%);"
+              ></div>
+              <span class="filter-class"> Red</span>
+              <span>10</span>
+            </div>
+            <div class="filter-data">
+              <div
+                class="filter-color"
+                style="--first-color: hsl(249, 100%, 79%);"
+              ></div>
+              <span class="filter-class"> Violet</span>
+              <span>10</span>
+            </div>
+          </div>
+
+          <div class="filter-item">
+            <h3 class="filter-title">Category</h3>
+
+            <div class="filter-data">
+              <span class="filter-text">Tops & Toes</span>
+              <span>14</span>
+            </div>
+
+            <div class="filter-data">
+              <span class="filter-text">Dresses & Jumpsuites</span>
+              <span>06</span>
+            </div>
+
+            <div class="filter-data">
+              <span class="filter-text">Bottoms</span>
+              <span>14</span>
+            </div>
+
+            <div class="filter-data">
+              <span class="filter-text">Outerwear & Jackets</span>
+              <span>23</span>
+            </div>
+
+            <div class="filter-data">
+              <span class="filter-text">Co-ord Sets</span>
+              <span>14</span>
+            </div>
+
+            <div class="filter-data">
+              <span class="filter-text">Loungewear</span>
+              <span>41</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!--=============== NEWSLETTER ===============-->
       <section class="newsletter" id="newsletter">
@@ -198,6 +358,7 @@
         </div>
       </section>
     </main>
+
     <!--=============== FOOTER ===============-->
     <footer class="footer">
       <div class="footer-container container grid section">
@@ -330,5 +491,11 @@
 
     <!--=============== HOMEJS ===============-->
     <script src="assets/js/home.js"></script>
+
+    <script>
+      NiceSelect.bind(document.getElementById("shop-select"), {
+        searchable: false,
+      });
+    </script>
   </body>
 </html>

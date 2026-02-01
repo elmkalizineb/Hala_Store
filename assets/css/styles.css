@@ -969,30 +969,139 @@ img {
   text-transform: uppercase;
 }
 
-.breadcrumb{
+.breadcrumb {
   background-color: var(--white-color);
   width: fit-content;
   margin-inline: auto;
   border-radius: 2rem;
   padding: 0.5rem 6.75rem;
   display: flex;
-
 }
 
-.breadcrumb-item:not(:first-child)::before{
-  content: '/';
+.breadcrumb-item:not(:first-child)::before {
+  content: "/";
   padding-right: 0.5rem;
   color: var(--text-color);
 }
-.breadcrump-item:not(:first-child){
+.breadcrump-item:not(:first-child) {
   padding-left: 0.5rem;
 }
 /*=============== SHOP ===============*/
-
 /*========== Top ==========*/
+.top-filter-bar,
+.top-filter-left,
+.top-filter-right,
+.filter-btn {
+  display: flex;
+  align-items: center;
+}
+.top-filter-bar {
+  justify-content: space-between;
+  margin-bottom: 3.75rem;
+}
+.top-filter-left,
+.top-filter-right {
+  column-gap: 1.25rem;
+}
+.filter-btn {
+  column-gap: 0.5rem;
+  background-color: var(--container-color);
+  color: var(--title-color);
+  padding: 1rem 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.filter-btn i {
+  font-size: var(--larger-font-size);
+}
+.filter-results,
+.filter-subtitle {
+  font-size: var(--small-font-size);
+}
 
+.filter-results {
+  color: var(--title-color);
+  font-weight: var(--weight-600);
+}
+.filter-subtitle {
+  color: var(--title-color);
+  font-weight: var(--weight-700);
+}
+
+.top-filter-right .nice-select{
+  width: 340px;
+  background-color: var(--white-color);
+}
+
+.view-btns{
+  display: flex;
+  column-gap: 0.5rem;
+}
+.view-btn{
+  width: 48px;
+  aspect-ratio: 1/1;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.active-view-btn{
+  background-color: var(--text-color);
+}
+.active-view-btn .view-icon{
+  filter: invert(1);
+}
 /*========== Filters ==========*/
+.shop-filters{
+  grid-template-columns: repeat(4,1fr);
+  align-items: start;
+}
 
+.filter-item{
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 2rem;
+}
+
+.filter-title{
+  font-size: var(--large-font-size);
+  margin-bottom: 1.5rem;
+}
+
+.filter-data{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 0.75rem;
+}
+
+.filter-data:not(:last-child){
+  margin-bottom: 1rem;
+}
+
+.filter-checkbox{
+  width: 16px;
+  height: 16px;
+}
+
+.filter-text{
+  margin-right: auto;
+}
+
+.filter-range{
+  width: 100%;
+  margin-top: 1.25rem;
+}
+
+.filter-range::-webkit-slider-runnable-track{
+  background-color: var(--text-color);
+  height: 4px;
+}
+
+.filter-range::-webkit-slider-thumb{
+
+}
 /*========== Products ==========*/
 
 /*========== Pagination ==========*/
