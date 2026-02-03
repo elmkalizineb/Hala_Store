@@ -1057,6 +1057,14 @@ img {
 .shop-filters{
   grid-template-columns: repeat(4,1fr);
   align-items: start;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease;
+  interpolate-size: allow-keywords;
+}
+
+.show-filters{
+  height: auto;
 }
 
 .filter-item{
@@ -1092,6 +1100,7 @@ img {
 .filter-range{
   width: 100%;
   margin-top: 1.25rem;
+  -webkit-appearance: none;
 }
 
 .filter-range::-webkit-slider-runnable-track{
@@ -1100,9 +1109,31 @@ img {
 }
 
 .filter-range::-webkit-slider-thumb{
-
+  -webkit-appearance: none;
+  background-color: var(--white-color);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--text-color);
+  position: relative;
+  top: -0.5rem;
+}
+.filter-color{
+  width: 18px;
+  height: 18px;
+  background-color: var(--first-color);
+  border-radius: 50%;
 }
 /*========== Products ==========*/
+.shop-products{
+  grid-template-columns: repeat(3,1fr);
+  gap: 2.5rem 1.5rem;
+  margin-top: 2rem;
+}
+
+.product-card{
+  position: relative;
+}
 
 /*========== Pagination ==========*/
 
