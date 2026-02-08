@@ -150,7 +150,6 @@
       <section class="details section">
         <div class="details-container container grid">
           <div class="details-left">
-            
             <div class="details-images grid">
               <img
                 src="assets/img/product-1-1.jpg"
@@ -351,28 +350,147 @@
 
             <div class="details-cart">
               <div class="add-to-cart">
-                <button type="button" class="sub"><i class="ri-subtract-line"></i></button>
-                <input type="text"  value="1" class="count"/>
-                <button type="button" class="add"><i class="ri-add-line"></i></button>
+                <button type="button" class="sub">
+                  <i class="ri-subtract-line"></i>
+                </button>
+                <input type="text" value="1" class="count" />
+                <button type="button" class="add">
+                  <i class="ri-add-line"></i>
+                </button>
               </div>
 
               <a href="#" class="btn">Add to Cart</a>
             </div>
 
             <div class="details-actions">
-              <a href="#"><i class="ri-arrow-left-right-fill"></i> Add to Compare</a>
+              <a href="#"
+                ><i class="ri-arrow-left-right-fill"></i> Add to Compare</a
+              >
               <a href="#"><i class="ri-heart-line"></i> Add to Wishlist</a>
             </div>
 
             <div class="details-return grid">
-              <li> <i class="ri-truck-fill"></i> Free International Shipping over 500DA </li>
-              <li> <i class="ri-arrow-go-back-line"></i> Free Returns Whithin 30 days</li>
+              <li>
+                <i class="ri-truck-fill"></i> Free International Shipping over
+                500DA
+              </li>
+              <li>
+                <i class="ri-arrow-go-back-line"></i> Free Returns Whithin 30
+                days
+              </li>
             </div>
           </div>
         </div>
       </section>
 
       <!--=============== DETAILS CONTENT ===============-->
+      <section class="details-content section container">
+        <div class="tab-btns">
+          <button class="tab-btn" data-target="#description">
+            Description
+          </button>
+          <button class="tab-btn" data-target="#specifications">Specifications</button>
+          <button class="tab-btn" data-target="#reviews">Reviews (04)</button>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-item tab-active " id="description">
+            <div class="description grid">
+              <div>
+                <p class="description-details">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Obcaecati ducimus quae non magnam labore quo unde blanditiis
+                  praesentium tenetur nobis.
+                  <br /><br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Blanditiis similique debitis quam possimus quos error magni
+                  et, exercitationem, voluptatem porro sunt repudiandae soluta
+                  distinctio eveniet, odio tempora nam reprehenderit dicta?
+                  <br /><br />
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempore consectetur perspiciatis laborum velit similique quam
+                  dicta id a harum aliquam placeat, nesciunt accusamus sed
+                  minima est nulla reiciendis voluptas ea nisi quis provident.
+                  Libero, aut ad explicabo non reiciendis iste!
+                </p>
+
+                <h3 class="decription-title">Product Features</h3>
+
+                <ul class="description-list grid">
+                  <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+                </ul>
+              </div>
+
+              <div class="description-images grid">
+                <img
+                  src="assets/img/description-1.jpg"
+                  alt=""
+                  class="description-img"
+                />
+                <img
+                  src="assets/img/description-2.jpg"
+                  alt=""
+                  class="description-img"
+                />
+                <img
+                  src="assets/img/description-3.jpg"
+                  alt=""
+                  class="description-img"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-item" id="specifications">
+            <ul class="specifications">
+              <li>
+                <h4>Brand : </h4>
+                <span>Artisanhide</span>
+              </li>
+
+              <li>
+                <h4>Color:</h4>
+                <span>Yellow</span>
+              </li>
+
+              <li>
+                <h4>Fabric:</h4>
+                <span>Premium Leather</span>
+              </li>
+
+              <li>
+                <h4>Weight:</h4>
+                <span>250 Gram</span>
+              </li>
+
+              <li>
+                <h4>Quality:</h4>
+                <span>Premium Plus</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-item" id="reviews ">
+            <div class="reviews grid">
+              <div>
+                <h3 class="reviews-title"> Review</h3>
+
+                <ul class="reviews-list grid">
+                  <li class="review-item">
+                    <img src="assets/img/comment-1.jpg" alt="" class="review-img">
+
+                    <div>
+                      
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!--=============== NEWSLETTER ===============-->
       <section class="newsletter" id="newsletter">
@@ -559,5 +677,20 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+    <script>
+      const mainImg = document.querySelector(".details-main-img"),
+        smallImg = document.querySelectorAll(".details-img");
+
+      smallImg.forEach((img) => {
+        img.addEventListener("click", function () {
+          mainImg.src = this.src;
+
+          smallImg.forEach((i) => i.classList.remove("active-img"));
+
+          this.classList.add("active-img");
+        });
+      });
+    </script>
   </body>
 </html>
