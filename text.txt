@@ -7,11 +7,18 @@ https://www.instagram.com/
 https://www.youtube.com/
 
 .navbar-select
+
 All Categories
 Fashion
 Electronics
 Jewelry
-Grocery
+Groceryi
+
+
+input -->  img.filter(nom , sameP()) && p.nom === element {
+    
+}
+
 
 .navbar-input
 Search...
