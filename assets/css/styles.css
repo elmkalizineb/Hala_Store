@@ -132,42 +132,42 @@ img {
   transform: translateX(-50%);
 }
 
-.form ,
-.input-group{
+.form,
+.input-group {
   display: grid;
   gap: 1rem;
 }
 
-.input{
+.input {
   border: 1px solid var(--gray-color);
   padding: 1rem 2rem;
   border-radius: 2rem;
 }
-.input-gray{
+.input-gray {
   background-color: var(--container-color);
 }
 
-.input-group{
-  grid-template-columns: repeat(2,1fr);
+.input-group {
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.btn-dark{
+.btn-dark {
   background-color: var(--title-color) !important;
 }
 
-.checkbox-input{
+.checkbox-input {
   display: flex;
   align-items: center;
   column-gap: 0.75rem;
   margin-bottom: 1rem;
 }
 
-.checkbox-input input{
+.checkbox-input input {
   width: 16px;
   height: 16px;
 }
 
-.checkbox-label{
+.checkbox-label {
   font-size: var(--small-font-size);
 }
 
@@ -1419,87 +1419,87 @@ img {
   font-size: var(--small-font-size);
 }
 
-.description-title{
+.description-title {
   font-size: var(--h4-font-size);
   margin-block: 2.5rem 1rem;
 }
 
-.description-list{
+.description-list {
   row-gap: 1rem;
   list-style: circle;
   padding-left: 1.1rem;
 }
 
-.description-images{
-  grid-template-columns: repeat(2,1fr);
+.description-images {
+  grid-template-columns: repeat(2, 1fr);
 }
-.description-img:last-child{
+.description-img:last-child {
   grid-column: 1/3;
 }
 
-.specifications{
+.specifications {
   background-color: var(--container-color);
   padding: 5rem 12rem;
 }
 
-.specifications li{
+.specifications li {
   display: flex;
   align-items: center;
   column-gap: 6.25rem;
   padding: 1.25rem 2.5rem;
 }
 
-.specifications li:nth-child(odd){
+.specifications li:nth-child(odd) {
   background-color: var(--white-color);
   border-radius: 2rem;
 }
 
-.specifications li h4{
+.specifications li h4 {
   font-size: var(--normal-font-size);
   font-weight: var(--weight-500);
 }
 
-.reviews{
-  grid-template-columns: repeat(2,1fr);
+.reviews {
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.reviews-title{
+.reviews-title {
   font-size: 2rem;
   margin-bottom: 3rem;
 }
 
-.reviews-list{
+.reviews-list {
   row-gap: 2.5rem;
 }
 
 .review-item,
 .reviews-info,
-.reviews-stars{
+.reviews-stars {
   display: flex;
 }
 
-.review-item{
+.review-item {
   gap: 1.25rem;
-  padding-bottom: 2.5rem ;
+  padding-bottom: 2.5rem;
   border-bottom: 1px solid var(--gray-color);
 }
 
-.review-img{
+.review-img {
   width: 110px;
   height: 110px;
   border-radius: 50%;
 }
 
-.reviews-info{
+.reviews-info {
   align-items: center;
   column-gap: 1rem;
 }
 
-.review-title{
+.review-title {
   font-size: var(--largest-font-size);
 }
 
-.reviews-stars{
+.reviews-stars {
   margin-left: auto;
   column-gap: 0.25rem;
   background-color: hsl(51, 100%, 67%);
@@ -1508,78 +1508,78 @@ img {
   font-size: var(--small-font-size);
 }
 
-.review-description{
+.review-description {
   font-family: var(--second-font);
   margin-top: 0.75rem;
 }
 
-.reviews-pagination{
+.reviews-pagination {
   justify-content: flex-start;
   margin-top: 2.5rem;
 }
 
-.textarea{
+.textarea {
   height: 131px;
   resize: none;
   padding-top: 1.5rem;
 }
 
 .reviews-rating,
-.reviews-stars{
+.reviews-stars {
   display: flex;
 }
 
-.reviews-rating-title{
+.reviews-rating-title {
   font-weight: var(--weight-500);
 }
 
-.reviews-rating{
+.reviews-rating {
   align-items: center;
   column-gap: 1.25rem;
   margin-bottom: 1rem;
 }
 
 /*=============== ACCOUNT ===============*/
-.account-container{
-  grid-template-columns: repeat(2,1fr);
+.account-container {
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
 
-.login{
+.login {
   width: 80%;
   margin-inline: auto;
 }
 
 .account-title,
-.account-description{
+.account-description {
   text-align: center;
 }
 
-.account-title{
+.account-title {
   font-size: var(--h2-font-size);
   margin-bottom: 1rem;
 }
 
-.account-description{
+.account-description {
   margin-bottom: 2.25rem;
 }
 
-.forgot-password{
+.forgot-password {
   color: var(--title-color);
   font-weight: var(--weight-500);
 }
 
-.account-btn{
+.account-btn {
   margin-top: 1rem;
 }
 
-.register-form{
+.register-form {
   background-color: var(--container-color);
   padding: 3.75rem;
   border-radius: 2rem;
 }
 
-.register-form .input{
+.register-form .input {
   background-color: var(--white-color);
 }
 
@@ -1598,7 +1598,112 @@ img {
 /*=============== ACCORDION ===============*/
 
 /*=============== CONTACT ===============*/
+.contact-container {
+  grid-template-columns: 8fr 4fr;
+}
+.contact-data {
+  display: flex;
+  align-items: center;
+  column-gap: 1.75rem;
+  margin-bottom: 3.25rem;
+}
 
+.contact-title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--weight-600);
+  margin-bottom: 0.5rem;
+}
+
+.contact-description {
+  color: var(--title-color);
+  font-family: var(--second-font);
+  font-size: var(--large-font-size);
+}
+
+.contact-area {
+  height: 160px;
+  resize: none;
+  padding-block: 1.5rem;
+}
+
+.contact-checkbox {
+  margin-top: 0.25rem;
+}
+
+.contact-btn {
+  justify-self: flex-start;
+}
+
+.contact-content {
+  background-color: var(--title-color);
+  padding: 3rem;
+  border-radius: 2rem;
+}
+.contact-subtitle,
+.contact-info-title,
+.contact-timing b {
+  color: var(--white-color);
+}
+.contact-subtitle{
+  font-size: var(--h3-font-size);
+  margin-bottom: 2.5rem;
+}
+.contact-info{
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--text-color) ;
+}
+
+.contact-info:not(:last-child){
+  margin-bottom: 2rem;
+}
+
+.contact-info-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.contact-info-title{
+  text-transform: uppercase;
+  font-weight:var(--weight-500);
+}
+
+.contact-timing{
+  display: block;
+  color: var(--text-color-light);
+}
+
+.contact-mail-link,
+.contact-item,
+.contact-item a,
+.location-description{
+  color: var(--text-color-light);
+  font-weight: var(--weight-500);
+}
+
+.contact-timing:not(:last-child){
+  margin-bottom: 0.75rem;
+}
+
+.contact-list,
+.contact-mails{
+  row-gap: 0.5rem;
+}
+
+.contact-mail-link,
+.contact-item a{
+  transition: color 0.3s ease;
+}  
+
+.contact-mail-link:hover,
+.contact-item a:hover{
+  color: var(--first-color);
+}  
+
+.contact-item a{
+  margin-left: 1rem;
+}
 /*=============== ACCORDION ===============*/
 
 /*=============== BREAKPOINTS ===============*/
