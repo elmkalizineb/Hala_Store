@@ -4,38 +4,544 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== REMIXICON ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
     <!--=============== NICE SELECT CSS ===============-->
+    <link rel="stylesheet" href="assets/css/nice-select2.css" />
 
     <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>Hala Store</title>
   </head>
   <body>
     <!--=============== HEADER ===============-->
-    <header class="header"></header>
+    <header class="header">
+      <!--======= Topbar ========-->
+      <div class="topbar">
+        <div class="topbar-container container">
+          <ul class="topbar-list">
+            <li class="topbar-item">
+              <a href="returns.html" class="topbar-link"> RETURNS POLICY </a>
+            </li>
+
+            <li class="topbar-item">
+              <a href="#newsletter" class="topbar-link">NEWSETTLER</a>
+            </li>
+
+            <li class="topbar-item">
+              <a href="contact.html" class="topbar-link">CONTACT</a>
+            </li>
+          </ul>
+
+          <div class="topbar-socials">
+            <a href="https://www.facebook.com/" class="topbar-social-link">
+              <i class="ri-facebook-circle-fill"></i>
+            </a>
+            <a href="https://twitter.com/" class="topbar-social-link">
+              <i class="ri-twitter-x-fill"></i>
+            </a>
+            <a href="https://www.instagram.com/" class="topbar-social-link">
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a href="https://www.youtube.com/" class="topbar-social-link">
+              <i class="ri-youtube-fill"></i>
+            </a>
+          </div>
+
+          <div class="topbar-shipping">
+            <img src="assets/img/truck.svg" alt="" class="topbar-icon" />
+            <p class="topbar-text">Free Shipping for all Orders of 150DA</p>
+          </div>
+        </div>
+      </div>
+      <!--======= Bottom bar  ========-->
+      <div class="bottom-bar container">
+        <a href="index.html">
+          <img src="assets/img/logo.jpg" alt="" />
+        </a>
+
+        <form action="" class="navbar-form">
+          <select
+            name=""
+            id="navbar-select"
+            style="display: none"
+            class="navbar-select"
+          >
+            <option value="all" selected>All Categories</option>
+            <option value="fas">Fashion</option>
+            <option value="ele">Electronics</option>
+            <option value="jew">Jewelry</option>
+            <option value="gro">Grocery</option>
+          </select>
+
+          <input type="text" placeholder="Search..." class="navbar-input" />
+
+          <button type="submit" class="navbar-search">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+
+        <div class="navbar-btns">
+          <a href="account.html" class="navbar-btn"
+            ><i class="ri-user-line"></i
+          ></a>
+          <a href="#" class="navbar-btn">
+            <i class="ri-heart-line"></i>
+          </a>
+          <a href="#" class="navbar-btn"
+            ><i class="ri-shopping-cart-line"></i
+          ></a>
+        </div>
+      </div>
+      <!--======= Navbar  ========-->
+      <nav class="navbar container">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link">HOME</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="shop.html" class="navbar-link">SHOP</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="account.html" class="navbar-link">MY ACCOUNT</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link"> CONTACT </a>
+          </li>
+        </ul>
+        <div class="navbar-contact">
+          <img src="assets/img/call.svg" alt="" class="navbar-icon" />
+          <a href="tel:097103626" class="navbar-call-link">097103626</a>
+        </div>
+      </nav>
+    </header>
     <!--=============== MAIN ===============-->
     <main class="main">
       <!--=============== BANNER ===============-->
+      <section class="banner">
+        <div class="container">
+          <h1 class="banner-title">Return Policy</h1>
+          <p class="banner-description">
+            Love it or return it -- no stress no fuss
+          </p>
+
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html">Home</a>
+            </li>
+
+            <li class="breadcrumb-item">
+              <a href="returns.html"> Returns Policy </a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <!--=============== RETURNS ===============-->
+      <section class="returns section">
+        <h2
+          class="section-title title-center"
+          data-title="Shipping Options & Times "
+        >
+          We offer three different delivery options.
+        </h2>
+
+        <div class="returns-container container grid">
+          <div class="in-store">
+            <div class="in-store-bg">
+              <h3 class="returns-title">
+                <i class="ri-checkbox-circle-fill"></i> In store returns
+              </h3>
+
+              <p class="returns-description">
+                Returns made to all Yours Clothing stores will be FREE for up to
+                6 <br />
+                Additional items will then be charged at 500DA per item which
+                will be deducted from your refund. <br /><br />
+                Simply supply your dispatch email and we will provide an
+                exchange , gift card or refund.
+              </p>
+
+              <a href="#" class="btn in-store-btn"> Find Nearest Store</a>
+            </div>
+
+            <img src="assets/img/In-store.jpg" alt="" class="returns-img" />
+          </div>
+
+          <div class="online-returns">
+            <h3 class="returns-title">
+              <i class="ri-checkbox-circle-fill"></i> Online returns
+            </h3>
+
+            <ul class="online-list grid">
+              <li class="online-item">
+                Standard returns policy is 21 days for store & online orders.
+              </li>
+              <li class="online-item">
+                Return may be rejected if Items fail to be in a resalable
+                condition.
+              </li>
+              <li class="online-item">
+                Items must be in their original condition and include all things
+              </li>
+            </ul>
+
+            <p class="returns-description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+              pariatur. Iste, labore commodi quod magni hic consequuntur
+              perspiciatis repudiandae eum mollitia cum id repellendus explicabo
+              voluptatem adipisci fugiat officia laboriosam!
+            </p>
+
+            <ul class="returns-list grid">
+              <li class="returns-item">In-store returns are free</li>
+              <li class="returns-item">
+                Your invoice is attached to your order dispatch email.
+              </li>
+              <li class="returns-item">
+                You will receive email confirmation of your return.
+              </li>
+              <li class="returns-item">
+                Funds will be issued via payement method used for puchase
+                whithin 3-5 working days
+              </li>
+            </ul>
+
+            <a href="#" class="btn btn-dark"> Create a Return</a>
+          </div>
+        </div>
+      </section>
 
       <!--=============== STEPS ===============-->
+      <section class="steps">
+        <h2
+          class="section-title title-center"
+          data-title="Return a online order "
+        >
+          HERE'S HOW :
+        </h2>
+
+        <div class="steps-container container grid">
+          <article class="steps-card">
+            <div class="steps-img" data-no="1">
+              <img src="assets/img/steps-1.svg" alt="" class="steps-icon" />
+            </div>
+
+            <h3 class="steps-title">Register a Return</h3>
+            <p class="steps-description">
+              Click on " Register a return" and click the items you wish to
+              return.
+            </p>
+          </article>
+
+          <article class="steps-card">
+            <div class="steps-img" data-no="2">
+              <img src="assets/img/steps-2.svg" alt="" class="steps-icon" />
+            </div>
+
+            <h3 class="steps-title">Select the Method</h3>
+            <p class="steps-description">
+              Click on " Register a return" and click the items you wish to
+              return.
+            </p>
+          </article>
+
+          <article class="steps-card">
+            <div class="steps-img" data-no="3">
+              <img src="assets/img/steps-3.svg" alt="" class="steps-icon" />
+            </div>
+
+            <h3 class="steps-title">Handling Instructions</h3>
+            <p class="steps-description">
+              Click on " Rgister a return" and click the items you wish to
+              return.
+            </p>
+          </article>
+        </div>
+      </section>
 
       <!--=============== ACCORDION ===============-->
+      <section class="container section">
+        <div class="accordion-bg">
+          <h2 class="accordion-title">Useful Faq's</h2>
+
+          <div class="accordion-items grid">
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <i class="ri-add-line"></i>
+                <h3 class="accordion-subtitle">How do I place an order ?</h3>
+              </div>
+              <div class="accordion-content">
+                <p class="accprdion-description">
+                  Once your order is shipped , you'll receive a tracking link
+                  via email. You can also log in to your account and view your
+                  order status anytime.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <i class="ri-add-line"></i>
+                <h3 class="accordion-subtitle">
+                  Can I make changes to my order after placing it ?
+                </h3>
+              </div>
+
+              <div class="accordion-content">
+                <p class="accprdion-description">
+                  Once your order is shipped , you'll receive a tracking link
+                  via email. You can also log in your account and view your
+                  order status anytime.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <i class="ri-add-line"></i>
+                <h3 class="accordion-subtitle">How can I track my order ?</h3>
+              </div>
+
+               <div class="accordion-content">
+                <p class="accprdion-description">
+                  Once your order is shipped , you'll receive a tracking link
+                  via email. You can also log in to your account and view your
+                  order status anytime.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <i class="ri-add-line"></i>
+                <h3 class="accordion-subtitle">
+                  What payement methods do you accept ?
+                </h3>
+              </div>
+
+               <div class="accordion-content">
+                <p class="accprdion-description">
+                  Once your order is shipped , you'll receive a tracking link
+                  via email. You can also log in to your account and view your
+                  order status anytime.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <i class="ri-add-line"></i>
+                <h3 class="accordion-subtitle">Can I cancel my order?</h3>
+              </div>
+
+               <div class="accordion-content">
+                <p class="accprdion-description">
+                  Once your order is shipped , you'll receive a tracking link
+                  via email. You can also log in to your account and view your
+                  order status anytime.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!--=============== NEWSLETTER ===============-->
+      <section class="newsletter" id="newsletter">
+        <div class="newsletter-container container grid">
+          <div class="newsletter-group">
+            <h2 class="section-title" data-title="Subscribe Newsletter">
+              <span>Enjoy 15% off*</span>
+              your first order when you sign up
+            </h2>
+
+            <from class="newsletter-form">
+              <input
+                type="text"
+                placeholder="Email Address.."
+                class="newsletter-input"
+              />
+
+              <button class="newsletter-btn">
+                <i class="ri-arrow-right-line"></i>
+              </button>
+            </from>
+
+            <p>* New subscribers only . Discount excludes selected lines .</p>
+          </div>
+
+          <div class="newsletter-images grid">
+            <div class="flex">
+              <div class="newsletter-box">
+                <img
+                  src="assets/img/subscribe-img-1.jpg"
+                  alt=""
+                  class="newsletter-img"
+                />
+              </div>
+
+              <div class="newsletter-box">
+                <img
+                  src="assets/img/subscribe-img-2.jpg"
+                  alt=""
+                  class="newsletter-img"
+                />
+              </div>
+            </div>
+            <div class="newsletter-box">
+              <img
+                src="assets/img/subscribe-img-3.jpg"
+                alt=""
+                class="newsletter-img image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!--=============== FOOTER ===============-->
+    <footer class="footer">
+      <div class="footer-container container grid section">
+        <div>
+          <a href="index.html">
+            <img src="assets/img/footer-logo.jpg" alt="" class="footer-logo" />
+          </a>
+
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/" class="footer-social-link">
+              <i class="ri-facebook-circle-fill"></i>
+            </a>
+            <a href="https://twitter.com/" class="footer-social-link">
+              <i class="ri-twitter-x-fill"></i>
+            </a>
+            <a href="https://www.instagram.com/" class="footer-social-link">
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a href="https://www.youtube.com/" class="footer-social-link">
+              <i class="ri-youtube-fill"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Contact</h3>
+
+          <ul class="footer-contact grid">
+            <li class="footer-item">
+              <img src="assets/img/phone.svg" alt="" class="footer-icon" />
+              <a href="tel:0791035530" class="footer-link">0791035530</a>
+            </li>
+
+            <li class="footer-item">
+              <img src="assets/img/envelope.svg" alt="" class="footer-icon" />
+              <a href="mailto:hala.store@gmail.com" class="footer-link"
+                >hala.store@gmail.com</a
+              >
+            </li>
+
+            <li class="footer-item">
+              <img src="assets/img/map.svg" alt="" class="footer-icon" />
+              <p class="footer-address">54 rue beausejour Rais hamidou</p>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Links</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="#" class="footer-link">Our Products</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Testomontials</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Export Team</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Product Details</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Help & Advise</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">About</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="#" class="footer-link">About Us </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Perks</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Careers</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Trading</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Terms</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="#" class="footer-link">Privacy Policy </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">About Cookies</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Terms of Use </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Brands Terms</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-group container">
+        <span class="footer-copy"> COPYRIGHT © 2026 HalaStore </span>
+
+        <img
+          src="assets/img/payment-method.png"
+          alt=""
+          class="footer-payement"
+        />
+      </div>
+    </footer>
 
     <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scrollup">
+      <i class="ri-arrow-up-line scrollup-icon"> </i>
+    </a>
 
     <!--=============== NICE SELECT JS ===============-->
-
-    <!--=============== ACCORDION JS ===============-->
+    <script src="assets/js/nice-select2.js"></script>
 
     <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+    <!--=============== ACCORDION JS ===============-->
+    <script src="assets/js/accordion.js"></script>
   </body>
 </html>

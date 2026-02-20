@@ -1592,9 +1592,148 @@ img {
 /*=============== CHECKOUT ===============*/
 
 /*=============== RETURNS ===============*/
+.returns-container {
+  grid-template-columns: repeat(2, 1fr);
+}
 
+.in-store {
+  background-color: var(--container-color);
+}
+
+.in-store-bg,
+.online-returns {
+  padding: 2.5rem;
+}
+
+.returns-title {
+  display: flex;
+  align-items: center;
+  column-gap: 1.25rem;
+  font-size: var(--h3-font-size);
+  margin-bottom: 1rem;
+}
+
+.returns-description,
+.online-item,
+.returns-item {
+  font-family: var(--second-font);
+}
+
+.in-store-btn {
+  background-color: var(--white-color);
+  color: var(--title-color);
+  margin-top: 1.25rem;
+}
+
+.in-store-btn,
+.online-returns,
+.online-item {
+  border: 1px solid var(--border-color);
+}
+
+.returns-img {
+  width: 100%;
+}
+
+.online-list {
+  row-gap: 0.625rem;
+  margin-bottom: 2rem;
+}
+.online-item {
+  background-color: hsl(52, 100%, 92%);
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+}
+
+.online-item,
+.returns-item {
+  font-size: var(--large-font-size);
+}
+
+.returns-list {
+  row-gap: 1rem;
+  list-style: circle;
+  padding-left: 1.25rem;
+  margin-block: 1.5rem 2.25rem;
+}
+
+.returns-item {
+  line-height: 1.5;
+}
 /*=============== STEPS ===============*/
+.steps-container {
+  grid-template-columns: repeat(3, 1fr);
+}
 
+.steps-card,
+.steps-img {
+  border: 1px solid var(--border-color);
+}
+
+.steps-card {
+  padding: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.steps-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background-color: var(--first-color);
+  z-index: -10;
+  transition: height 0.4s ease;
+}
+
+.steps-card:hover::before {
+  height: 100%;
+}
+
+.steps-img {
+  width: 140px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  display: grid;
+  place-items: center;
+  margin-inline: auto;
+  position: relative;
+}
+
+.steps-img::before {
+  content: attr(data-no);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  background-color: var(--title-color);
+  color: var(--white-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.steps-title {
+  font-size: var(--h4-font-size);
+  margin-block: 1.5rem 0.75rem;
+}
+
+.steps-description{
+  font-family: var(--second-font);
+}
+
+.steps-title,
+.steps-description{
+  transition: color 0.3s ease;
+}
+
+.steps-card:hover :is(.steps-title,.steps-description){
+  color: var(--white-color);
+}
 /*=============== ACCORDION ===============*/
 
 /*=============== CONTACT ===============*/
@@ -1644,32 +1783,32 @@ img {
 .contact-timing b {
   color: var(--white-color);
 }
-.contact-subtitle{
+.contact-subtitle {
   font-size: var(--h3-font-size);
   margin-bottom: 2.5rem;
 }
-.contact-info{
+.contact-info {
   padding-bottom: 2.5rem;
-  border-bottom: 1px solid var(--text-color) ;
+  border-bottom: 1px solid var(--text-color);
 }
 
-.contact-info:not(:last-child){
+.contact-info:not(:last-child) {
   margin-bottom: 2rem;
 }
 
-.contact-info-header{
+.contact-info-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1.25rem;
 }
 
-.contact-info-title{
+.contact-info-title {
   text-transform: uppercase;
-  font-weight:var(--weight-500);
+  font-weight: var(--weight-500);
 }
 
-.contact-timing{
+.contact-timing {
   display: block;
   color: var(--text-color-light);
 }
@@ -1677,34 +1816,83 @@ img {
 .contact-mail-link,
 .contact-item,
 .contact-item a,
-.location-description{
+.location-description {
   color: var(--text-color-light);
   font-weight: var(--weight-500);
 }
 
-.contact-timing:not(:last-child){
+.contact-timing:not(:last-child) {
   margin-bottom: 0.75rem;
 }
 
 .contact-list,
-.contact-mails{
+.contact-mails {
   row-gap: 0.5rem;
 }
 
 .contact-mail-link,
-.contact-item a{
+.contact-item a {
   transition: color 0.3s ease;
-}  
+}
 
 .contact-mail-link:hover,
-.contact-item a:hover{
+.contact-item a:hover {
   color: var(--first-color);
-}  
+}
 
-.contact-item a{
+.contact-item a {
   margin-left: 1rem;
 }
 /*=============== ACCORDION ===============*/
+.accordion-bg{
+  background-color: var(--container-color);
+  padding: 4.25rem 7.5rem;
+  border-radius: 2rem;
+}
+
+.accordion-title{
+  font-size: var(--h2-font-size);
+  margin-bottom: 3.75rem;
+}
+
+.accordion-item{
+  padding-left: 3rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1.5rem;
+}
+
+.accordion-subtitle{
+  font-size: var(--h4-font-size);
+}
+
+.accordion-header{
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-header i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -2.5rem;
+  font-size: var(--largest-font-size);
+}
+
+.accordion-content{
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.accordion-description{
+  margin-block: 1rem 1.25rem;
+}
+
+accordion{
+  padding-top: 0;
+}
+
+
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
