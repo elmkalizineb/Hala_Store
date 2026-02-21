@@ -1584,7 +1584,72 @@ img {
 }
 
 /*=============== CART ===============*/
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
+.cart-table {
+  margin-bottom: 3rem;
+}
+
+.thead {
+  background-color: var(--title-color);
+  color: var(--white-color);
+  height: 60px;
+}
+
+.thead th {
+  text-align: left;
+  color: var(--white-color);
+  padding-left: 1rem;
+}
+
+/* .thead-title {
+  border: 1px solid var(--gray-color);
+} */
+
+.tbody tr {
+  border-bottom: 1px solid var(--gray-color);
+}
+
+.cart-data {
+  display: flex;
+  align-items: center;
+  column-gap: 1.75rem;
+  padding: 1rem;
+}
+
+.cart-img {
+  width: 130px;
+  border: 1px solid var(--gray-color);
+  margin-left: 1.75rem;
+}
+
+.cart-title {
+  font-size: var(--normal-font-size);
+  width: 70%;
+  line-height: 1.5;
+  margin-bottom: 0.25rem;
+}
+
+.cart-price {
+  color: var(--title-color);
+}
+
+.cart-price,
+.cart-subtotal {
+  font-weight: var(--weight-500);
+}
+
+.cart-size {
+  font-size: var(--small-font-size);
+  margin-top: 0.75rem;
+}
+
+.subtotal-col{
+  width: 150px;
+}
 /*=============== CART BOTTOM ===============*/
 
 /*=============== WISHLIST ===============*/
@@ -1722,16 +1787,16 @@ img {
   margin-block: 1.5rem 0.75rem;
 }
 
-.steps-description{
+.steps-description {
   font-family: var(--second-font);
 }
 
 .steps-title,
-.steps-description{
+.steps-description {
   transition: color 0.3s ease;
 }
 
-.steps-card:hover :is(.steps-title,.steps-description){
+.steps-card:hover :is(.steps-title, .steps-description) {
   color: var(--white-color);
 }
 /*=============== ACCORDION ===============*/
@@ -1844,28 +1909,28 @@ img {
   margin-left: 1rem;
 }
 /*=============== ACCORDION ===============*/
-.accordion-bg{
+.accordion-bg {
   background-color: var(--container-color);
   padding: 4.25rem 7.5rem;
   border-radius: 2rem;
 }
 
-.accordion-title{
+.accordion-title {
   font-size: var(--h2-font-size);
   margin-bottom: 3.75rem;
 }
 
-.accordion-item{
+.accordion-item {
   padding-left: 3rem;
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 1.5rem;
 }
 
-.accordion-subtitle{
+.accordion-subtitle {
   font-size: var(--h4-font-size);
 }
 
-.accordion-header{
+.accordion-header {
   position: relative;
   cursor: pointer;
 }
@@ -1878,21 +1943,19 @@ img {
   font-size: var(--largest-font-size);
 }
 
-.accordion-content{
+.accordion-content {
   height: 0;
   overflow: hidden;
   transition: height 0.3s ease;
 }
 
-.accordion-description{
+.accordion-description {
   margin-block: 1rem 1.25rem;
 }
 
-accordion{
+accordion {
   padding-top: 0;
 }
-
-
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
