@@ -340,6 +340,32 @@
                 </div>
               </li>
             </ul>
+
+            <div class="cart-totals">
+              <div class="total-area">
+                <h3 class="total-title">Cart Totals</h3>
+
+                <ul class="total-list grid">
+                  <li class="total-item">
+                    <h3 class="total-subtitle">Subtotal :</h3>
+                    <span class="total-value">9000DA </span>
+                  </li>
+
+                  <li class="total-item">
+                    <h3 class="total-subtitle">Shipping</h3>
+                    <span class="total-value">Free </span>
+                  </li>
+
+                  <li><hr class="total-rule" /></li>
+
+                  <li class="total-item">
+                    <h3 class="total-subtitle">Total</h3>
+                    <span class="total-value">9000 DA </span>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -531,12 +557,11 @@
     <script src="assets/js/main.js"></script>
 
     <script>
-      ['country' , 'state' , 'city'].forEach((id) =>{
-         NiceSelect.bind(document.getElementById(id), {
-        searchable: false,
+      ["country", "state", "city"].forEach((id) => {
+        NiceSelect.bind(document.getElementById(id), {
+          searchable: false,
+        });
       });
-      });
-     
     </script>
   </body>
 </html>
