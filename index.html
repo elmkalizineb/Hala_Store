@@ -27,7 +27,6 @@
   <body>
     <!--=============== HEADER ===============-->
     <header class="header">
-      
       <!--======= Topbar ========-->
       <div class="topbar">
         <div class="topbar-container container">
@@ -104,9 +103,25 @@
             ><i class="ri-shopping-cart-line"></i
           ></a>
         </div>
+
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
       </div>
       <!--======= Navbar  ========-->
-      <nav class="navbar container">
+      <nav class="navbar container" id="nav-menu">
+        <a href="index.html" class="mobile-logo">
+          <img src="assets/img/logo.jpg" alt="" class="" />
+        </a>
+
+        <form action="" class="navbar-form mobile-form">
+          <input type="text" placeholder="Search..." class="navbar-input" />
+
+          <button type="submit" class="navbar-search">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+
         <ul class="navbar-list">
           <li class="navbar-item">
             <a href="index.html" class="navbar-link">HOME</a>
@@ -124,9 +139,28 @@
             <a href="contact.html" class="navbar-link"> CONTACT </a>
           </li>
         </ul>
-        <div class="navbar-contact">
-          <img src="assets/img/call.svg" alt="" class="navbar-icon" />
-          <a href="tel:097103626" class="navbar-call-link">097103626</a>
+
+        <div class="navbar-contacts">
+          <div class="navbar-contact">
+            <img src="assets/img/call.svg" alt="" class="navbar-icon" />
+            <a href="tel:097103626" class="navbar-call-link">097103626</a>
+          </div>
+
+          <div class="navbar-contact">
+            <img src="assets/img/message.svg" alt="" class="navbar-icon" />
+            <a href="mailto:usermane@domain.com" class="navbar-call-link"
+              >usermane@domain.com</a
+            >
+          </div>
+
+          <div class="navbar-contact">
+            <img src="assets/img/map.svg" alt="" class="navbar-icon" />
+            <p class="navbar-address">54 chemin Beauséjour Rais Hamidou</p>
+          </div>
+        </div>
+
+        <div class="nav-close" id="nav-close">
+          <i class="ri-close-circle-fill"></i>
         </div>
       </nav>
     </header>
@@ -140,7 +174,11 @@
             <!-- Slide 1  -->
             <div
               class="swiper-slide"
-              style="background: url(./assets/img/home-img-1.jpg)"
+              style="
+                background: url(./assets/img/home-img-1.jpg);
+                background-size: cover;
+                background-position: center center;
+              "
             >
               <div class="container">
                 <div class="home-tag">
@@ -158,7 +196,11 @@
             <!-- Slide 2  -->
             <div
               class="swiper-slide"
-              style="background: url(./assets/img/home-img-2.jpg)"
+              style="
+                background: url(./assets/img/home-img-2.jpg);
+                background-size: cover;
+                background-position: center center;
+              "
             >
               <div class="container">
                 <div class="home-tag">
@@ -1981,15 +2023,17 @@
       <div class="footer-group container">
         <span class="footer-copy"> COPYRIGHT © 2026 HalaStore </span>
 
-        <img src="assets/img/payment-method.png" alt="" class="footer-payement">
+        <img
+          src="assets/img/payment-method.png"
+          alt=""
+          class="footer-payement"
+        />
       </div>
     </footer>
 
     <!--=============== SCROLL UP ===============-->
     <a href="#" class="scrollup" id="scrollup">
-      <i class="ri-arrow-up-line scrollup-icon">
-
-      </i>
+      <i class="ri-arrow-up-line scrollup-icon"> </i>
     </a>
 
     <!--=============== SWIPER JS ===============-->
