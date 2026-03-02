@@ -7,10 +7,27 @@ var homeSwiper = new Swiper(".home-swiper", {
 });
 
 /*=============== PRODUCT SWIPER ===============*/
-var homeSwiper = new Swiper(".product-swiper", {
+var productSwiper = new Swiper(".product-swiper", {
     loop: true,
-    slidesPerView:3,
-   spaceBetween:30,
+   
+    breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1400: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
 });
 /*=============== ELEVATE SWIPER ===============*/
 var homeSwiper = new Swiper(".product-elevate-swiper", {

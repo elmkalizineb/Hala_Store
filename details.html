@@ -97,9 +97,13 @@
             ><i class="ri-shopping-cart-line"></i
           ></a>
         </div>
+
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
       </div>
       <!--======= Navbar  ========-->
-      <nav class="navbar container">
+      <nav class="navbar container" id="nav-menu">
         <ul class="navbar-list">
           <li class="navbar-item">
             <a href="index.html" class="navbar-link">HOME</a>
@@ -113,13 +117,40 @@
             <a href="account.html" class="navbar-link">MY ACCOUNT</a>
           </li>
 
+           <li class="navbar-item mobile-item">
+            <a href="wishlist.html" class="navbar-link">MY WISHLIST </a>
+          </li>
+
+          <li class="navbar-item mobile-item">
+            <a href="cart.html" class="navbar-link">MY CART</a>
+          </li>
+
           <li class="navbar-item">
             <a href="contact.html" class="navbar-link"> CONTACT </a>
           </li>
         </ul>
-        <div class="navbar-contact">
-          <img src="assets/img/call.svg" alt="" class="navbar-icon" />
-          <a href="tel:097103626" class="navbar-call-link">097103626</a>
+
+        <div class="navbar-contacts">
+          <div class="navbar-contact">
+            <img src="assets/img/call.svg" alt="" class="navbar-icon" />
+            <a href="tel:097103626" class="navbar-call-link">097103626</a>
+          </div>
+
+          <div class="navbar-contact">
+            <img src="assets/img/message.svg" alt="" class="navbar-icon" />
+            <a href="mailto:usermane@domain.com" class="navbar-call-link"
+              >usermane@domain.com</a
+            >
+          </div>
+
+          <div class="navbar-contact">
+            <img src="assets/img/map.svg" alt="" class="navbar-icon" />
+            <p class="navbar-address">54 chemin Beauséjour Rais Hamidou</p>
+          </div>
+        </div>
+
+        <div class="nav-close" id="nav-close">
+          <i class="ri-close-circle-fill"></i>
         </div>
       </nav>
     </header>
@@ -359,7 +390,7 @@
                 </button>
               </div>
 
-              <a href="#" class="btn">Add to Cart</a>
+              <a href="cart.html" class="btn">Add to Cart</a>
             </div>
 
             <div class="details-actions">
@@ -724,7 +755,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="footer-contact-div">
           <h3 class="footer-title">Contact</h3>
 
           <ul class="footer-contact grid">

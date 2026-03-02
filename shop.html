@@ -97,9 +97,25 @@
             ><i class="ri-shopping-cart-line"></i
           ></a>
         </div>
+
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
       </div>
       <!--======= Navbar  ========-->
-      <nav class="navbar container">
+      <nav class="navbar container" id="nav-menu">
+        <a href="index.html" class="mobile-logo">
+          <img src="assets/img/logo.jpg" alt="" class="" />
+        </a>
+
+        <form action="" class="navbar-form mobile-form">
+          <input type="text" placeholder="Search..." class="navbar-input" />
+
+          <button type="submit" class="navbar-search">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+
         <ul class="navbar-list">
           <li class="navbar-item">
             <a href="index.html" class="navbar-link">HOME</a>
@@ -113,13 +129,40 @@
             <a href="account.html" class="navbar-link">MY ACCOUNT</a>
           </li>
 
+          <li class="navbar-item mobile-item">
+            <a href="wishlist.html" class="navbar-link">MY WISHLIST </a>
+          </li>
+
+          <li class="navbar-item mobile-item">
+            <a href="cart.html" class="navbar-link">MY CART</a>
+          </li>
+
           <li class="navbar-item">
             <a href="contact.html" class="navbar-link"> CONTACT </a>
           </li>
         </ul>
-        <div class="navbar-contact">
-          <img src="assets/img/call.svg" alt="" class="navbar-icon" />
-          <a href="tel:097103626" class="navbar-call-link">097103626</a>
+
+        <div class="navbar-contacts">
+          <div class="navbar-contact">
+            <img src="assets/img/call.svg" alt="" class="navbar-icon" />
+            <a href="tel:097103626" class="navbar-call-link">097103626</a>
+          </div>
+
+          <div class="navbar-contact">
+            <img src="assets/img/message.svg" alt="" class="navbar-icon" />
+            <a href="mailto:usermane@domain.com" class="navbar-call-link"
+              >usermane@domain.com</a
+            >
+          </div>
+
+          <div class="navbar-contact">
+            <img src="assets/img/map.svg" alt="" class="navbar-icon" />
+            <p class="navbar-address">54 chemin Beauséjour Rais Hamidou</p>
+          </div>
+        </div>
+
+        <div class="nav-close" id="nav-close">
+          <i class="ri-close-circle-fill"></i>
         </div>
       </nav>
     </header>
@@ -1208,183 +1251,6 @@
 
             <div class="product-tag sale">Sale</div>
           </article>
-
-          <!-- Article 6 -->
-          <article class="product-card">
-            <div class="product-header">
-              <img src="assets/img/product-10.jpg" alt="" class="product-img" />
-
-              <div class="product-content">
-                <div class="product-top">
-                  <ul class="product-stars">
-                    <li><i class="ri-star-fill"></i></li>
-                    <li><i class="ri-star-fill"></i></li>
-                    <li><i class="ri-star-fill"></i></li>
-                    <li><i class="ri-star-fill"></i></li>
-                    <li><i class="ri-star-line"></i></li>
-
-                    <li class="product-rating">4.9</li>
-                  </ul>
-
-                  <div class="product-colors">
-                    <div>
-                      <input
-                        type="radio"
-                        name="color"
-                        class="product-color-input"
-                      />
-                      <span
-                        class="product-color"
-                        style="--background-color: hsl(0, 60%, 64%)"
-                      ></span>
-                    </div>
-
-                    <div>
-                      <input
-                        type="radio"
-                        name="color"
-                        class="product-color-input"
-                      />
-                      <span
-                        class="product-color"
-                        style="--background-color: hsl(0, 0%, 100%)"
-                      ></span>
-                    </div>
-
-                    <div>
-                      <input
-                        type="radio"
-                        name="color"
-                        class="product-color-input"
-                      />
-                      <span
-                        class="product-color"
-                        style="--background-color: hsl(159, 46%, 56%)"
-                      ></span>
-                    </div>
-
-                    <div>
-                      <input
-                        type="radio"
-                        name="color"
-                        class="product-color-input"
-                      />
-                      <span
-                        class="product-color"
-                        style="--background-color: hsl(223, 60%, 60%)"
-                      ></span>
-                    </div>
-
-                    <div>
-                      <input
-                        type="radio"
-                        name="color"
-                        class="product-color-input"
-                      />
-                      <span
-                        class="product-color"
-                        style="--background-color: hsl(0, 100%, 68%)"
-                      ></span>
-                    </div>
-
-                    <div>
-                      <input
-                        type="radio"
-                        name="color"
-                        class="product-color-input"
-                      />
-                      <span
-                        class="product-color"
-                        style="--background-color: hsl(112, 81%, 67%)"
-                      ></span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="product-size">
-                  <div>
-                    <input
-                      type="radio"
-                      name="size"
-                      class="product-size-input"
-                      id="x-small"
-                      checked
-                    />
-                    <label for="x-small" class="product-size-label">xs</label>
-                  </div>
-
-                  <div>
-                    <input
-                      type="radio"
-                      name="size"
-                      class="product-size-input"
-                      id="small"
-                    />
-                    <label for="small" class="product-size-label">S</label>
-                  </div>
-
-                  <div>
-                    <input
-                      type="radio"
-                      name="size"
-                      class="product-size-input"
-                      id="meduim"
-                    />
-                    <label for="medium" class="product-size-label">M</label>
-                  </div>
-
-                  <div>
-                    <input
-                      type="radio"
-                      name="size"
-                      class="product-size-input"
-                      id="large"
-                    />
-                    <label for="large" class="product-size-label">L</label>
-                  </div>
-
-                  <div>
-                    <input
-                      type="radio"
-                      name="size"
-                      class="product-size-input"
-                      id="x-large"
-                    />
-                    <label for="x-large" class="product-size-label">XL</label>
-                  </div>
-
-                  <div>
-                    <input
-                      type="radio"
-                      name="size"
-                      class="product-size-input"
-                      id="double-x-large"
-                    />
-                    <label for="double-x-large" class="product-size-label"
-                      >XXL</label
-                    >
-                  </div>
-                </div>
-                <a href="details.html" class="btn">Add to Cart</a>
-              </div>
-            </div>
-
-            <div class="product-bottom">
-              <div>
-                <h3 class="product-title">
-                  <a href="details.html" class=""> Denim Jacket</a>
-                </h3>
-
-                <span class="product-price">9000DA</span>
-              </div>
-
-              <a href="#" class="product-wishlist">
-                <i class="ri-heart-line"></i>
-              </a>
-            </div>
-
-            <div class="product-tag sale">Sale</div>
-          </article>
         </div>
 
         <ul class="pagination">
@@ -1416,7 +1282,6 @@
               ><i class="ri-arrow-right-double-line"></i>
             </a>
           </li>
-
         </ul>
       </section>
 
@@ -1498,7 +1363,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="footer-contact-div">
           <h3 class="footer-title">Contact</h3>
 
           <ul class="footer-contact grid">
@@ -1606,6 +1471,9 @@
 
     <!--=============== HOMEJS ===============-->
     <script src="assets/js/home.js"></script>
+
+    <!--=============== MAINJS ===============-->
+    <script src="assets/js/main.js"></script>
 
     <script>
       NiceSelect.bind(document.getElementById("shop-select"), {
