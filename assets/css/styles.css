@@ -2209,7 +2209,7 @@ img {
   margin-block: 1rem 1.25rem;
 }
 
-accordion {
+.accordion {
   padding-top: 0;
 }
 
@@ -2488,36 +2488,44 @@ accordion {
   .details-container,
   .description,
   .reviews,
-  .contact-container {
+  .contact-container,
+  .returns-container,
+  .cart-bottom {
     grid-template-columns: 1fr;
   }
 
   .newsletter-container,
   .description,
   .reviews,
-  .contact-container {
+  .contact-container,
+  .returns-container {
     row-gap: 2.5rem;
   }
 
-  .description-images{
-    grid-template-columns: repeat(2,1fr);
+  .description-images {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .specifications{
+  .specifications {
     padding-inline: 2rem;
   }
 
-  .banner{
+  .banner {
     background-position: top center;
     background-size: cover;
   }
 
-  .accordion-bg{
-    padding:2.5rem ;
+  .accordion-bg {
+    padding: 2.5rem;
   }
 
-  .newsletter {
-    padding-block: 3.75rem;
+  .accordion-items {
+    row-gap: 1.25rem;
+  }
+
+  .accordion-item {
+    padding-left: 2.25rem;
+    padding-bottom: 1.25rem;
   }
 
   .categories-header {
@@ -2530,12 +2538,42 @@ accordion {
     margin-bottom: 2rem;
   }
 
-  .product-elevate-container {
+  .product-elevate-container,
+  .steps-container {
     grid-template-columns: repeat(2, 1fr);
   }
 
   .category-img {
     width: 130px;
+  }
+
+  .newsletter {
+    padding-block: 3.75rem;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .table {
+    table-layout: fixed;
+  }
+
+  .cart-data,
+  .thead-title {
+    width: 580px;
+  }
+
+  .quantity-col{
+    width: 250px;
+  }
+
+  .subtotal-col{
+    width: 150px;
+  }
+
+  .action-col{
+    width: 234px;
   }
 }
 
